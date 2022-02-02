@@ -2,7 +2,7 @@
 
 This repository contains data and codes we used in support of our work "Sector Homophily Levels in Vocational Networks Across 20 Years".
 
-This project provides the dataset of mobility network structure, network community, and companies with GICS code. In order to protect the privacy, the companies' name are all hashes by sha256. And also provides the code of the main figures in our paper.
+This project provides the dataset of mobility network structure, network community, and companies with GICS code. In order to protect the privacy, the companies' name are all hashed by sha256. And also provides the code of the main figures in our paper.
 
 The folder "Data" provides the data of the mobility network. Split into multiple files due to file size limitation. According to the column name of file, they are the worker's ID, and the information of his first job(including work period, job title, company name, company size and job grade), the information of the second job, and the time of job change.
 
