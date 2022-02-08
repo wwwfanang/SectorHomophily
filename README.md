@@ -11,3 +11,5 @@ All data files are in "Releases-Data".
 3. File "Company_Sector_Community.csv" is the GICS code for each company.
 
 The rest of the R codes can correspond to the figures in the paper according to the file name.
+
+If you have any questions, please contact me by wwwwfanang@gmail.com.
