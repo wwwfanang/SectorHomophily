@@ -5,7 +5,7 @@ data_all<- fread('Company_Community_Sector.csv')
 cluster_community<- unique(rbind(data.table(Company=data_all$From,Cluster=data_all$From.C),
                                  data.table(Company=data_all$To,Cluster=data_all$To.C)))
 
-ends_unique<- data_all[,.(.N),by=.(From,To)]
+ends_unique<- data_all
 colnames(ends_unique)[3]<- 'Moves'
 setorder(ends_unique,-Moves)
 g_all<- graph_from_data_frame(ends_unique,directed = T)
@@ -19,8 +19,8 @@ setorder(cluster_length,-N)
 la<- 20
 cluster_la<- cluster_length$Cluster[1:la]
 
-move_out<- data_all[,.(.N),From]
-move_in<-data_all[,.(.N),To]
+move_out<- data_all[,sum(Weight),From]
+move_in<-data_all[,sum(Weight),To]
 move_all<- merge(move_out,move_in,by.x='From',by.y = 'To',all=T)
 move_sum<- move_all[,sum(N.x,N.y,na.rm=T),From]
 
@@ -52,5 +52,8 @@ ends<- ends(g_all1,E(g_all1))
 E<- data.table(Source=ends[,1],Target=ends[,2],Weight=E(g_all1)$weight,Id=1:length(E(g_all1)))
 fwrite(V,'Gephi_CompanyV.csv')
 fwrite(E,'Gephi_CompanyE.csv')
+
+
+
 
 
