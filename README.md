@@ -2,7 +2,9 @@
 
 This repository contains data and codes we used in support of our work "Sector Homophily Levels in Vocational Networks Across 20 Years".
 
-This project provides the dataset of mobility network structure, network community, and companies with GICS code. In order to protect the privacy, the companies' name are all hashed by sha256. And also provides the code of the main figures in our paper.
+This project provides the dataset of mobility network structure, network community, and companies with GICS code. 
+Due to privacy issues and concerns regarding possible (even if with low probability) events of leaks of private data, the non-aggregated data was not uploaded to an open access Github. Any party wishing to get the non-aggregated data can contact us, to the emails published in the paper, and we will send the requests for approval to the legal owner of the non aggregated data. 
+
 
 Data：
 All data files are in "Releases-Data". 
