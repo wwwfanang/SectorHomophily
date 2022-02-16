@@ -6,9 +6,8 @@ This project provides the dataset of mobility network structure, network communi
 
 Data：
 All data files are in "Releases-Data". 
-1. The file "CompanyLink.csv" is the link between two companies. 
-2. File "Company_Community_Louvain.csv" is the community number of each company based on Louvain. 
-3. File "Company_Sector_Community.csv" is the GICS code for each company.
+1. The file "Company_Community_Sector.csv" is the link between two companies and the community number of each company based on Louvain. 
+2. File "Company_Sector_Community.csv" is the GICS code for each company.
 
 The rest of the R codes can correspond to the figures in the paper according to the file name.
 
