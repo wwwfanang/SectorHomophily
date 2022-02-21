@@ -5,7 +5,7 @@ This repository contains data and codes we used in support of our work
 
 This code provides the dataset of mobility network structure, network community, and companies with GICS code. 
 
-Please note that the data is located in the Data tag a the right side of the main Git repository. 
+Please note that the data is located in the Data tag a the right side of the main Git repository. We use this method due to the file`s sizes. 
 
 Data：
 All data files are in "Releases -> Data". 
