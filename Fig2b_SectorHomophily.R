@@ -50,7 +50,6 @@ for(j in 1:iter){
   }
   entropy<- cbind(entropy,Entropies)
 }
-
 entropy_all<- data.table()
 for(i in seq_along(Industry)){
   entropy_all<- cbind(entropy_all,data.frame(P=entropy[i,]))
