@@ -1,7 +1,7 @@
 # Group_Homophily
 
 This repository contains data and codes we used in support of our work 
-"Group Homophily as a Measure of Self-Liking of Communities: Application in Vocational Networks.".
+"Group Homophily as a Measure of Self-Liking: Application in Career Networks and Scientific Collaboration".
 
 This code provides the dataset of mobility network structure, network community, and companies with GICS code. 
 
