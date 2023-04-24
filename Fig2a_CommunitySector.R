@@ -30,6 +30,7 @@ for(i in 1:la){
   industry_combine2[i,id1]<- combine_num$V1[id]/industry_num$N[id1]
 }
 
+
 ### plot
 draw_colnames_45 <- function (coln, ...) {
   m = length(coln)
