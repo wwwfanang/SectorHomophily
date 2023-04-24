@@ -5,7 +5,6 @@ library(RColorBrewer)
 library(grid)
 
 data_all<- fread('Company_Community_Sector.csv')
-
 ## choose the top 20 largest communities
 cluster_community<- unique(rbind(data.table(Company=data_all$From,Cluster=data_all$From.C),
                                  data.table(Company=data_all$To,Cluster=data_all$To.C)))
