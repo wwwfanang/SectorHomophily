@@ -12,7 +12,6 @@ g_all<- graph_from_data_frame(ends_unique,directed = T)
 E(g_all)$weight<- ends_unique$Moves
 
 # Gephi company node ------------------------------------------------------
-
 cluster_length<- cluster_community[,.(.N),by=Cluster]
 setorder(cluster_length,-N)
 
